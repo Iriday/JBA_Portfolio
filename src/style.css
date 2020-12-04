@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+header, footer {
+    display: flex;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: black;
+    color: gray;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+footer {
+    justify-content: center;
+    position: absolute;
+}
+
+h1, h2, #menu a {
+    font-family: 'Major Mono Display', monospace;
+}
+
+h2 {
+    text-align: center;
+}
+
+#menu a {
+    font-size: 22px;
+    color: gray;
+}
+
+#menu a:hover, header h1:hover {
+    color: white;
+}
+
+#menu {
+    width: 390px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    margin-top: 55px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 1000px;
+    background-color: white;
+    margin: 8px;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+#portfolio img {
+    width: 400px;
+    height: 220px;
+}
