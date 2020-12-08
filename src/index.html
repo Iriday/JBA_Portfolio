@@ -15,6 +15,7 @@
     </nav>
 </header>
 <main>
+    <!-- About -->
     <section id="about">
         <h2>About me</h2>
         <img id="avatar" src="images/avatar.jpg" alt="anonymous mask img">
@@ -24,15 +25,58 @@
         <p>... no data.</p>
         <p id="skills"><strong>Skills</strong>: Java, Kotlin, Python, front-end(HTML, CSS, JS), ...no data.</p>
     </section>
+    <!-- Portfolio -->
     <section id="portfolio">
         <h2>Portfolio</h2>
-        <img id="unknown-project-1" src="images/unknown-project-1.jpg" alt="Unknown project 1 img">
-        <p>01110101 01101110 01101011 01101110 01101111 01110111 01101110 1</p>
-        <img id="unknown-project-2" src="images/unknown-project-2.jpg" alt="Unknown project 2 img">
-        <p>Unknown project 2</p>
-        <img id="unknown-project-3" src="images/unknown-project-3.jpg" alt="Unknown project 3 img">
-        <p>01110101 01101110 01101011 01101110 01101111 01110111 01101110 3</p>
+        <div id="portfolio-projects">
+            <div class="project">
+                <img id="unknown-project-1" class="open-window" src="images/unknown-project-1.jpg"
+                     alt="Unknown project 1 img">
+                <h5>01110101 01101110 01101011 01101110 01101111 01110111 01101110 1</h5>
+                <div class="window-model">
+                    <div class="window">
+                        <h3>01110101 01101110 01101011 01101110 01101111 01110111 01101110 1</h3>
+                        <p>This project was created to ...no data</p>
+                        <p>... no data</p>
+                        <p>... no data</p>
+                        <p>... no data</p>
+                        <span class="close-window">&times;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img id="unknown-project-2" class="open-window" src="images/unknown-project-2.jpg"
+                     alt="Unknown project 2 img">
+                <h5>01110101 01101110 01101011 01101110 01101111 01110111 01101110 2</h5>
+                <div class="window-model">
+                    <div class="window">
+                        <h3>01110101 01101110 01101011 01101110 01101111 01110111 01101110 2</h3>
+                        <p>This project was created to ...no data</p>
+                        <p>... no data</p>
+                        <p>... no data</p>
+                        <p>... no data</p>
+                        <span class="close-window">&times;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img id="unknown-project-3" class="open-window" src="images/unknown-project-3.jpg"
+                     alt="Unknown project 3 img">
+                <h5>01110101 01101110 01101011 01101110 01101111 01110111 01101110 3</h5>
+                <div class="window-model">
+                    <div class="window">
+                        <h3>01110101 01101110 01101011 01101110 01101111 01110111 01101110 3</h3>
+                        <p>This project was created to ...no data</p>
+                        <p>... no data</p>
+                        <p>... no data</p>
+                        <p>... no data</p>
+                        <span class="close-window">&times;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- Contacts -->
     <section id="contacts">
         <h2>Contacts</h2>
         <p>Location unknown.</p>
@@ -44,5 +88,6 @@
 <footer>
     <p>Made by Anonymous Programmer. 20XX.</p>
 </footer>
+<script src="main.js"></script>
 </body>
 </html>

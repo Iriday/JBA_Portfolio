@@ -66,7 +66,61 @@ section {
     border-radius: 3px;
 }
 
+#about img {
+    border-radius: 3px;
+}
+
 #portfolio img {
     width: 400px;
     height: 220px;
+    border-radius: 3px;
+}
+
+.window-model {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.window {
+    position: fixed;
+    background-color: white;
+    width: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    border: black solid 1px;
+    padding: 15px;
+}
+
+.close-window {
+    font-size: 35px;
+    color: red;
+}
+
+#portfolio-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 400px;
+    text-align: center;
+}
+
+.open-window:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+#contacts {
+    text-align: center;
 }
