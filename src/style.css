@@ -27,7 +27,7 @@ footer {
     position: absolute;
 }
 
-h1, h2, #menu a {
+h1, h2, #menu a, #hamburger-menu a {
     font-family: 'Major Mono Display', monospace;
 }
 
@@ -37,10 +37,13 @@ h2 {
 
 #menu a {
     font-size: 22px;
+}
+
+#menu a, #hamburger-menu a {
     color: gray;
 }
 
-#menu a:hover, header h1:hover {
+#menu a:hover, #hamburger-menu a:hover, #close-ham-menu:hover, header h1:hover {
     color: white;
 }
 
@@ -123,4 +126,52 @@ section {
 
 #contacts {
     text-align: center;
+}
+
+.close-window, #open-ham-menu, #close-ham-menu {
+    cursor: pointer;
+}
+
+/* Hamburger menu */
+#hamburger-menu {
+    display: none;
+    height: 180px;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    justify-content: space-around;
+    text-align: center;
+    background-color: black;
+    padding: 8px 8px 0;
+    font-size: 17px;
+    border-radius: 3px;
+}
+
+@media (min-width: 1101px) {
+    #hamburger, #hamburger-menu, #open-ham-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    #open-ham-menu {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
+
+#close-ham-menu {
+    font-size: 25px;
+}
+
+#open-ham-menu {
+    height: 22px;
 }

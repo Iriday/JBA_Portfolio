@@ -1,3 +1,16 @@
+// Hamburger menu
+const hamMenu = document.getElementById("hamburger-menu")
+const openHamMenu = document.getElementById("open-ham-menu")
+openHamMenu.onclick = () => {
+    hamMenu.style.display = "flex"
+    openHamMenu.style.display = "none"
+}
+document.getElementById("close-ham-menu").onclick = () => {
+    hamMenu.style.display = "none"
+    openHamMenu.style.display = "block"
+}
+
+// Project pop up windows
 const projects = document.getElementsByClassName("project")
 
 for (let project of projects) {
